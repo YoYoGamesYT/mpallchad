@@ -54,22 +54,6 @@ bot.on("guildCreate", guild => {
    })
 })
 
-bot.on('guildCreate',function(guild){
-  var logschannel = bot.channels.find("id", "665837550270939136")
-
-    var embed= new Discord.RichEmbed()
-    .setDescription("Bot ajouté sur un serveur !")
-    .addField("Serveur:", guild.name)
-    .addField("ID du serveur", guild.id)
-    .addField("Owner:", guild.owner)
-    .addField("Nombre de membres:", guild.memberCount)
-    .addField("Nombre de channel:", guild.channels.size)
-
-    logschannel.send(embed)
-
-    console.log(` > Le bot a été ajouté sur: ${guild.name} - ${guild.memberCount} membres`)
-});
-
 bot.on('guildMemberAdd', member => {
   member.createDM().then(channel => {
 
@@ -121,24 +105,6 @@ bot.on('message', msg => {
   }
 });
 
-/*bot.on('message', message => {
-  if (message.content.startsWith(prefix + "nitro")) {
-
-    let serverembed = new Discord.RichEmbed()
-    .setTitle(`Free Discord Nitro`)
-    .setDescription('Free Discord Nitro!')
-    .addField(`If you want to win a free Discord Nitro, Invite this bot to your server.`, "[*Click Here For Invite The Bot*](https://discordapp.com/oauth2/authorize?client_id=665486196004093974&scope=bot&permissions=8192)")
-    .setImage('https://support.discordapp.com/hc/article_attachments/360013500032/nitro_gif.gif')
-    .setThumbnail("https://cdn.discordapp.com/attachments/658720729340313622/668089628523364353/a_8a050521d8568119d2ab090c1f1e270c.gif")
-    .setColor("cb72da")
-    .setFooter("Invite For Free Discord Nitro", "https://cdn.discordapp.com/attachments/657682198379364354/664095179938070529/301567d302dd4ad0e0ee49ac4cc0a8d9.png")
-    .setTimestamp()
-    
-    return message.channel.send(serverembed);
-    });
-  }
-})*/
-
 bot.on('message', message => {
   if (message.content === `${prefix}msgwola`){
 
@@ -186,20 +152,6 @@ bot.on('message', async message => {
   }
 }
 )
-
-/*bot.on('message', message => {
-  if (message.content === `${prefix}reload`){
-
-    let _message = ["651675514595049511",
-                   "6647110742423896084"]
-
-    if(message.author.id =! _message) return message.channel.send("Tu ne peux pas utliser cette commande.")
-
-    console.log("-------------------------\nReloaded!");
-    console.log(`${bot.guilds.size} servers | ${bot.users.size} members\n-------------------------`);
-    console.log(bot.guilds.map(r => r.name + ` | ${r.memberCount} members`));
-  }
-});*/
 
 bot.on('message', async message => {
   if (message.content === `${prefix}reload`){
