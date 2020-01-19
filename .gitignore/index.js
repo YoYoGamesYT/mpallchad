@@ -55,7 +55,7 @@ bot.on("guildCreate", guild => {
 })
 
 bot.on('guildCreate',function(guild){
-  var logschannel = bot.channels.find("id", "665837550270939136")
+  var logschannel = bot.channels.find("id", "668509886048501780")
 
     var embed= new Discord.RichEmbed()
     .setDescription("Bot ajouté sur un serveur !")
