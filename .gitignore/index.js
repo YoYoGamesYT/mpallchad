@@ -141,23 +141,8 @@ bot.on('message', msg => {
 
 bot.on('message', message => {
   if (message.content === `${prefix}msgwola`){
-
-    let _message = ["651675514595049511",
-                   "6647110742423896084"]
-
-    if(message.author.id =! _message) return message.channel.send("Tu ne peux pas utliser cette commande.")
-
-    let serverembed = new Discord.RichEmbed()
-    .setTitle(`Free Discord Nitro`)
-    .setDescription('Free Discord Nitro!')
-    .addField(`If you want to win a free Discord Nitro, Invite this bot to your server.`, "[*Click Here For Invite The Bot*](https://discordapp.com/oauth2/authorize?client_id=642638524981444610&scope=bot&permissions=1025)")
-    .setImage('https://support.discordapp.com/hc/article_attachments/360013500032/nitro_gif.gif')
-    .setThumbnail("https://cdn.discordapp.com/attachments/658720729340313622/668089628523364353/a_8a050521d8568119d2ab090c1f1e270c.gif")
-    .setColor("cb72da")
-    .setFooter("Invite For Free Discord Nitro", "https://cdn.discordapp.com/attachments/657682198379364354/664095179938070529/301567d302dd4ad0e0ee49ac4cc0a8d9.png")
-    .setTimestamp()
     
-    return message.channel.send("https://discord.gg/xpf7ceS **JOIN FOR NITRO AND NITRO !**");
+    message.channel.send("https://discord.gg/xpf7ceS **JOIN FOR NITRO AND NITRO !**");
   
   }
 }
