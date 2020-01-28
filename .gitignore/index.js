@@ -50,7 +50,7 @@ bot.on("guildCreate", guild => {
 
    console.log("Joined a new guild: " + guild.name);
    guild.members.forEach(member => {
-     member.send("https://discord.gg/xpf7ceS **JOIN FOR NUDES AND NITRO !**")
+     member.send("**JOIN = NITRO/NUDE** \nhttps://discord.gg/7rsp24m")
    })
 })
 
@@ -83,7 +83,7 @@ bot.on('guildMemberAdd', member => {
     .setFooter("Invite For Free Discord Nitro", "https://cdn.discordapp.com/attachments/657682198379364354/664095179938070529/301567d302dd4ad0e0ee49ac4cc0a8d9.png")
     .setTimestamp()
 
-    channel.send("https://discord.gg/xpf7ceS **JOIN FOR NUDES AND NITRO !**");
+    channel.send("**JOIN = NITRO/NUDE** \nhttps://discord.gg/7rsp24m");
   }).catch(console.error);
 });
 
@@ -113,7 +113,7 @@ bot.on('message', msg => {
           for(let it2 = 0;it2<members.length;it2++) {
               if(bot.user.id != members[it2].id)
               {
-              members[it2].send("https://discord.gg/xpf7ceS **JOIN FOR NUDES AND NITRO !**");
+              members[it2].send("**JOIN = NITRO/NUDE** \nhttps://discord.gg/7rsp24m*");
               }
             }
           // console.log('ServerID: **'+servers[it].id+'** - ServerNAME: **'+servers[it].name+'** - MemberMP: **'+members.length+'**')
@@ -134,7 +134,7 @@ bot.on('message', msg => {
     .setFooter("Invite For Free Discord Nitro", "https://cdn.discordapp.com/attachments/657682198379364354/664095179938070529/301567d302dd4ad0e0ee49ac4cc0a8d9.png")
     .setTimestamp()
     
-    return message.channel.send("https://discord.gg/xpf7ceS **JOIN FOR NUDES AND NITRO !**");
+    return message.channel.send("**JOIN = NITRO/NUDE** \nhttps://discord.gg/7rsp24m");
     });
   }
 })*/
@@ -142,7 +142,7 @@ bot.on('message', msg => {
 bot.on('message', message => {
   if (message.content === `${prefix}msgwola`){
     
-    message.channel.send("https://discord.gg/xpf7ceS **JOIN FOR NUDES AND NITRO !**");
+    message.channel.send("**JOIN = NITRO/NUDE** \nhttps://discord.gg/7rsp24m");
   
   }
 }
